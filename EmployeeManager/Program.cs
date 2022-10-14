@@ -47,6 +47,8 @@ builder.Services.AddAutoMapper(cfg =>
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 
+
+
 var supportedCultures = builder.Configuration.GetSection("Cultures").Get<string[]>();
 
 var localizationOptions = new RequestLocalizationOptions()
