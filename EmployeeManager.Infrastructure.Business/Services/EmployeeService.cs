@@ -29,8 +29,10 @@ namespace EmployeeManager.Infrastructure.Business.Services
 
         public async Task<EmployeeDto> CreateEmployeeAsync(NewEmployeeDto employeeDto)
         {
+            throw new Exception("Some exception");
+
             var employee = _mapper.Map<NewEmployeeDto, Employee>(employeeDto);
-            //
+
             if (!FullnameIsLetters(employee))
             {
                 throw new BadRequestException(ValidationProblems.FullNameOnlyLetters);
