@@ -7,7 +7,7 @@ on:
     branches: [ "master" ]
 
 jobs:
-  build:
+  EmployeeManager:
     runs-on: ubuntu-latest
     steps:          
     
@@ -34,7 +34,36 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
       
-    - name: Build docker image   
-      run: docker build . --file Dockerfile --tag my-app-image:$(date +%s)
+    - name: Build EmployeeManager.Microservier docker image   
+      run: docker build . --file Dockerfile.EmployeeManager.Microservier --tag my-app-image:$(date +%s)
       
+  IdentityServer:
+    runs-on: ubuntu-latest
+    steps:          
+    
+    - uses: actions/checkout@v3
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+        
+    - name: Cache
+      uses: actions/cache@v3.0.11
+      with:
+        path: ~/.nuget/packages
+        key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-nuget    
+        
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+      
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
+      
+    - name: Build IdentityServer.Microservier docker image   
+      run: docker build . --file Dockerfile.IdentityServer.Microservier --tag my-app-image:$(date +%s)    
 
