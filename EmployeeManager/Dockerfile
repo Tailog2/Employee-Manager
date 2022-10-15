@@ -7,7 +7,7 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["EmployeeManager/EmployeeManager.csproj", "EmployeeManager/"]
+COPY ["EmployeeManager.csproj", "EmployeeManager/"]
 COPY ["EmployeeManager.Infrastructure.Business/EmployeeManager.Infrastructure.Business.csproj", "EmployeeManager.Infrastructure.Business/"]
 COPY ["EmployeeManager.Domain.Interfaces/EmployeeManager.Domain.Interfaces.csproj", "EmployeeManager.Domain.Interfaces/"]
 COPY ["EmployeeManager.Domain.Core/EmployeeManager.Domain.Core.csproj", "EmployeeManager.Domain.Core/"]
