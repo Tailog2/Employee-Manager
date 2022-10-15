@@ -9,7 +9,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:          
     
     - uses: actions/checkout@v3
@@ -35,8 +34,7 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
       
-    - name: Build docker image
-      working-directory: EmployeeManager.Microservier
+    - name: Build docker image   
       run: docker build . --file Dockerfile --tag my-app-image:$(date +%s)
       
 
