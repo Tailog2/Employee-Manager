@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EmployeeManager.Microservier", "EmployeeManager.Microservier", "{92938686-AFFD-46AC-962B-63FB55EBEAFF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer.Microservier", "IdentityServer.Microservier", "{783B0AD7-C05E-43A8-9C1E-86A5162B73A6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManager", "EmployeeManager.Microservier\EmployeeManager\EmployeeManager.csproj", "{93844068-38DF-497E-9FB8-8029D677E999}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManager.Domain.Core", "EmployeeManager.Microservier\EmployeeManager.Domain.Core\EmployeeManager.Domain.Core.csproj", "{B4F200B8-E49A-4FED-B888-9F6330955427}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManager.Domain.Interfaces", "EmployeeManager.Microservier\EmployeeManager.Domain.Interfaces\EmployeeManager.Domain.Interfaces.csproj", "{744F3821-8DD8-47DE-BB10-B745BEE28AF7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManager.Infrastructure.Business", "EmployeeManager.Microservier\EmployeeManager.Infrastructure.Business\EmployeeManager.Infrastructure.Business.csproj", "{E618EA94-7873-4E00-BB27-511F69E9673E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManager.Infrastructure.Business.UnitTests", "EmployeeManager.Microservier\EmployeeManager.Infrastructure.Business.UnitTests\EmployeeManager.Infrastructure.Business.UnitTests.csproj", "{7376A930-D6C6-46BB-B1E9-B4759B384261}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManager.Infrastructure.Data", "EmployeeManager.Microservier\EmployeeManager.Infrastructure.Data\EmployeeManager.Infrastructure.Data.csproj", "{69D84387-BC9F-4BBB-81B9-E7BE918F8825}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManager.Services.Interfaces", "EmployeeManager.Microservier\EmployeeManager.Services.Interfaces\EmployeeManager.Services.Interfaces.csproj", "{ADFF6F21-A252-4262-AD1B-D84E0EF616A5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer", "IdentityServer.Microservier\IdentityServer\IdentityServer.csproj", "{797505DC-0A34-493C-8DC8-04DC0F3C72C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93844068-38DF-497E-9FB8-8029D677E999}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93844068-38DF-497E-9FB8-8029D677E999}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93844068-38DF-497E-9FB8-8029D677E999}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93844068-38DF-497E-9FB8-8029D677E999}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4F200B8-E49A-4FED-B888-9F6330955427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4F200B8-E49A-4FED-B888-9F6330955427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4F200B8-E49A-4FED-B888-9F6330955427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4F200B8-E49A-4FED-B888-9F6330955427}.Release|Any CPU.Build.0 = Release|Any CPU
+		{744F3821-8DD8-47DE-BB10-B745BEE28AF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{744F3821-8DD8-47DE-BB10-B745BEE28AF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{744F3821-8DD8-47DE-BB10-B745BEE28AF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{744F3821-8DD8-47DE-BB10-B745BEE28AF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E618EA94-7873-4E00-BB27-511F69E9673E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E618EA94-7873-4E00-BB27-511F69E9673E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E618EA94-7873-4E00-BB27-511F69E9673E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E618EA94-7873-4E00-BB27-511F69E9673E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7376A930-D6C6-46BB-B1E9-B4759B384261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7376A930-D6C6-46BB-B1E9-B4759B384261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7376A930-D6C6-46BB-B1E9-B4759B384261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7376A930-D6C6-46BB-B1E9-B4759B384261}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69D84387-BC9F-4BBB-81B9-E7BE918F8825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69D84387-BC9F-4BBB-81B9-E7BE918F8825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69D84387-BC9F-4BBB-81B9-E7BE918F8825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69D84387-BC9F-4BBB-81B9-E7BE918F8825}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADFF6F21-A252-4262-AD1B-D84E0EF616A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADFF6F21-A252-4262-AD1B-D84E0EF616A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADFF6F21-A252-4262-AD1B-D84E0EF616A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADFF6F21-A252-4262-AD1B-D84E0EF616A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{797505DC-0A34-493C-8DC8-04DC0F3C72C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{797505DC-0A34-493C-8DC8-04DC0F3C72C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{797505DC-0A34-493C-8DC8-04DC0F3C72C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{797505DC-0A34-493C-8DC8-04DC0F3C72C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{93844068-38DF-497E-9FB8-8029D677E999} = {92938686-AFFD-46AC-962B-63FB55EBEAFF}
+		{B4F200B8-E49A-4FED-B888-9F6330955427} = {92938686-AFFD-46AC-962B-63FB55EBEAFF}
+		{744F3821-8DD8-47DE-BB10-B745BEE28AF7} = {92938686-AFFD-46AC-962B-63FB55EBEAFF}
+		{E618EA94-7873-4E00-BB27-511F69E9673E} = {92938686-AFFD-46AC-962B-63FB55EBEAFF}
+		{7376A930-D6C6-46BB-B1E9-B4759B384261} = {92938686-AFFD-46AC-962B-63FB55EBEAFF}
+		{69D84387-BC9F-4BBB-81B9-E7BE918F8825} = {92938686-AFFD-46AC-962B-63FB55EBEAFF}
+		{ADFF6F21-A252-4262-AD1B-D84E0EF616A5} = {92938686-AFFD-46AC-962B-63FB55EBEAFF}
+		{797505DC-0A34-493C-8DC8-04DC0F3C72C4} = {783B0AD7-C05E-43A8-9C1E-86A5162B73A6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FE49F1D-1050-479C-A6EF-6DB487CC80A9}
+	EndGlobalSection
+EndGlobal
