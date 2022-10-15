@@ -36,6 +36,8 @@ jobs:
       run: dotnet test --no-build --verbosity normal
       
     - name: Build docker image
-      run: docker build . --file Dockerfile --tag my-app-image:$(date +%s)
+      with:
+        path: EmployeeManager.Microservier
+        run: docker build . --file Dockerfile --tag my-app-image:$(date +%s)
       
 
