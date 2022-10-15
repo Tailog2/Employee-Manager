@@ -26,6 +26,6 @@ jobs:
       
     - name: Build docker image
       working-directory: EmployeeManager
-      run: docker build . -file Dockerfile --tag my-app-image:$(date +%s)
+      run: docker build . --file Dockerfile --tag my-app-image:$(date +%s)
       
 
