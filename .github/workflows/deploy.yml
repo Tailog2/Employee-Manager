@@ -1,7 +1,7 @@
 name: Deploy
 
-on: 
-  deployment: [ "master" ]
+on:
+  deployment
 
 jobs:
   EmployeeManager:
